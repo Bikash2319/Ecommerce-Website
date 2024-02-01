@@ -14,11 +14,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class GreenKart {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","C:\\ChromeDriver\\chromedriver-win64\\chromedriver.exe");
+		
+		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5));
 		
